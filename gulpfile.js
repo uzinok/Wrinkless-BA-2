@@ -96,6 +96,7 @@ function copy() {
 }
 
 // styles
+// styles
 function styles() {
 	return src(paths.styles.src, {
 			sourcemaps: true
