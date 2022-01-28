@@ -15,19 +15,19 @@
 	<!-- header -->
 	<header class="header">
 		<!-- container -->
-		<div class="container">
+		<div class="header-container container">
 
 			<div class="toggle-nav">
-				<span class="hide-max-lg">Меню</span>
+				<span class="hide-max-sm">Меню</span>
 			</div>
 
 			<a href="#" class="header__logo">
-				<img src="./img/logo.svg" alt="#" class="header__logo-img">
+				<img src="./img/logo.svg" alt="#" class="header__logo-img" width="160" height="20">
 			</a>
 
-			<nav class="nav">
+			<nav class="nav hide-max-lg">
 				<ul class="nav__list">
-					<li class="nav__item"><a href="#" class="nav__link">Красота и здоровье</a></li>
+					<li class="nav__item"><a href="#" class="nav__link active">Красота и здоровье</a></li>
 					<li class="nav__item"><a href="#" class="nav__link">Техника</a></li>
 					<li class="nav__item"><a href="#" class="nav__link">Искусство</a></li>
 					<li class="nav__item"><a href="#" class="nav__link">Продукты</a></li>
@@ -38,40 +38,38 @@
 		</div>
 		<!-- /container -->
 
-		<!-- banner -->
-		<div class="banner">
-			<!-- banner__container -->
-			<div class="banner__container container">
+		<!-- top-banner -->
+		<div class="top-banner">
+			<!-- top-banner__container -->
+			<div class="top-banner__container container">
 
-				<div class="banner__text">December Sale</div>
+				<div class="top-banner__text">December Sale</div>
 
-				<img src="./img/banner.png" alt="#" class="banner__img">
+				<img src="./img/top-banner.png" alt="#" class="top-banner__img">
 
-				<a href="#" class="banner__discount">Discount Up to 50 %</a>
+				<a href="#" class="top-banner__discount">Discount Up to 50 %</a>
 
 			</div>
-			<!-- /banner__container -->
+			<!-- /top-banner__container -->
 		</div>
-		<!-- /banner -->
+		<!-- /top-banner -->
 	</header>
 	<!-- /header -->
 
 	<!-- breadcrumbs -->
 	<div class="breadcrumbs">
-
-		<div class="breadcrumbs__container container">
+		<div class="container">
 			<a href="#">Красота и здоровье</a>
 			<a href="#">Ухаживающая косметика</a>
 			<a href="#">Сыворотки для лица</a>
 		</div>
-
 	</div>
 	<!-- /breadcrumbs -->
 
 	<!-- main -->
-	<main>
+	<main class="container">
 		<!-- main-header -->
-		<header class="main-header">
+		<header class="left-content main-header">
 			<h1>Обзор сыворотки для лица с эффектом фильтров Instagram: реально омолаживает!</h1>
 
 			<p class="main-header__date">Опубликовано: 8 декабря 2021, 19:56</p>
@@ -85,15 +83,15 @@
 					<div class="ava ava-verified">
 						<img src="img/pic_ava.png" alt="#" class="ava-img">
 					</div>
-					<p class="section-header__info-author-name">Plasketta</p>
-					<p class="section-header__info-author-year">33 года</p>
+					<p class="main-header__info-author-name">Plasketta</p>
+					<p class="main-header__info-author-year">33 года</p>
 
 				</div>
 				<!-- /main-header__info-author -->
 
 				<div class="main-header__info-star">
 					<img src="./img/icon_5stars.svg" alt="#" class="main-header__info-star-img">
-					<span class="main-header__info-star-text">24 отзыва</span>
+					<span>24 отзыва</span>
 				</div>
 
 				<div class="main-header__info-rating">
@@ -102,18 +100,34 @@
 				</div>
 
 				<div class="main-header__info-social">
-					<a href="#" class="main-header__info-social-link main-header__info-social-link--telegram"></a>
-					<a href="#" class="main-header__info-social-link main-header__info-social-link--instagram"></a>
-					<a href="#" class="main-header__info-social-link main-header__info-social-link--onlyfans"></a>
-					<a href="#" class="main-header__info-social-link main-header__info-social-link--twitter"></a>
+					<a href="#" class="main-header__info-social-link">
+						{% include 'img/social_active_telegram.svg' %}
+					</a>
+					<a href="#" class="main-header__info-social-link">
+						{% include 'img/social_active_instagram.svg' %}
+					</a>
+					<a href="#" class="main-header__info-social-link">
+						{% include 'img/social_active_onlyfans.svg' %}
+					</a>
+					<a href="#" class="main-header__info-social-link">
+						{% include 'img/social_active_twitter.svg' %}
+					</a>
 				</div>
 
 			</div>
-			<!-- /section-header__info -->
+			<!-- /main-header__info -->
 		</header>
 		<!-- /main-header -->
 
-		<section class="container">
+		<!-- banner -->
+		<div class="banner block-prod">
+			<img src="./img/wrinkless_box.png" alt="#">
+			<a href="#" class="block-prod__btn">Заказать Wrinkless на официальном сайте</a>
+			<img src="./img/icon_trustmarks.png" alt="#">
+		</div>
+		<!-- /banner -->
+
+		<section class="left-content">
 			<h2>Лифтинг лишним не бывает, как в 25 лет, так и в 60! Рекомендую эту универсальную сыворотку для лица. Для такого бюджетного средства - эффект просто ВАУ!</h2>
 
 			<p>Девочки, привет! Знаю, что многие с нетерпением ждали обзор Wrinkless Serum. Получайте!</p>
@@ -211,16 +225,8 @@
 
 		</section>
 
-		<!-- banner -->
-		<div class="banner block-prod">
-			<img src="./img/wrinkless_box.png" alt="#"> <a href="#" class="block-prod__btn">Заказать Wrinkless на официальном сайте</a>
-			<img src="./img/icon_trustmarks.png" alt="#">
-		</div>
-		<!-- /banner -->
-
 		<!-- comments -->
-
-		<section class="comments container">
+		<section class="left-content comments container">
 			<h2 class="comments-heading">Комментарии <span>42</span></h2>
 
 			<!-- comments-list -->
@@ -358,7 +364,7 @@
 
 	<!-- footer -->
 	<footer class="footer">
-		<div class="container">
+		<div>
 			<div class="copi">© <span class="ryear">2022</span> We recommend™</div>
 		</div>
 

@@ -1,0 +1,31 @@
+.breadcrumbs {
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	@media (max-width: @max-lg) {
+		border-bottom: 1px solid #f0f5f3;
+	}
+
+	& a {
+		font-size: 10px;
+		line-height: 15px;
+		color: #9ba8a4;
+		text-decoration: none;
+		transition: color 0.2s ease-in-out;
+
+		@media (min-width: @min-lg) {
+			line-height: 32px;
+		}
+
+		&:hover {
+			color: #00b359;
+		}
+
+		&:not(:last-child) {
+			&::after {
+				content: '>';
+				padding: 0 3px 0 7px;
+			}
+		}
+	}
+}

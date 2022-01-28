@@ -1,0 +1,45 @@
+.block-prod {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
+	text-align: center;
+	background-color: hsl(160, 23%, 97%);
+	border-radius: 3px;
+}
+
+.block-prod__btn {
+	display: block;
+	max-width: 315px;
+	margin: 17px auto;
+	padding: 12px 25px;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 20px;
+	color: #fff;
+	text-decoration: none;
+	background-color: #00b359;
+	border-radius: 5px;
+
+	@media (min-width: @min-lg) {
+		padding: 15px 25px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+.banner {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+
+	@media (min-width: @min-lg) {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		box-sizing: border-box;
+		width: 356px;
+		padding: 10px;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+	}
+}
