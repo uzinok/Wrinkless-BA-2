@@ -1,0 +1,44 @@
+.news {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	overflow: hidden;
+}
+
+.news-heading {
+	margin-top: 0;
+	font-size: 24px;
+	line-height: 44px;
+}
+
+.news-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.news-item {
+	width: 168px;
+	flex-basis: 168px;
+	font-size: 12px;
+	line-height: 18px;
+
+	&:not(:last-child) {
+		margin-right: 20px;
+	}
+}
+
+.news-date {
+	margin: 0;
+	color: #9ba8a4;
+}
+
+.news-link {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		color: #00b359;
+		text-decoration: underline;
+	}
+}

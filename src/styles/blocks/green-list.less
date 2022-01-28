@@ -1,0 +1,24 @@
+.green-list {
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+	font-size: 13px;
+	line-height: 18px;
+
+	@media (min-width: @min-md) {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.green-item {
+	margin-bottom: 1em;
+
+	&::before {
+		content: url(../../img/icon_plus.png);
+		display: inline-block;
+		vertical-align: sub;
+		margin-right: 4px;
+	}
+}

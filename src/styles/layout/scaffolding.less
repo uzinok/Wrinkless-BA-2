@@ -76,3 +76,37 @@ h2 {
 		line-height: 22px;
 	}
 }
+
+p {
+	font-size: 13px;
+	line-height: 18px;
+
+	@media (min-width: @min-md) {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+.notes {
+	font-size: 10px;
+	line-height: 15px;
+
+	@media (min-width: @min-md) {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	&::before {
+		content: '*';
+		margin-right: 4px;
+	}
+}
+
+main p a {
+	font-weight: 700;
+	color: #00b359;
+}
