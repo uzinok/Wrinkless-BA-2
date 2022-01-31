@@ -88,6 +88,8 @@ function copy() {
 			"./src/*.ico",
 			"./src/img/**/*.{svg,jpg,jpeg,png,webp,avif}",
 			"./src/favicons/*",
+			"./src/js/*.js",
+			"./src/css/*.css",
 			"./src/*.webmanifest"
 		], {
 			base: paths.src

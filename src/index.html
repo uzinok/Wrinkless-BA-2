@@ -120,10 +120,12 @@
 		<!-- /main-header -->
 
 		<!-- banner -->
-		<div class="banner block-prod">
-			<img loading="lazy" src="./img/wrinkless_box.png" alt="#">
-			<a href="#" class="block-prod__btn">Заказать Wrinkless на официальном сайте</a>
-			<img loading="lazy" src="./img/icon_trustmarks.png" alt="#">
+		<div class="banner">
+			<div class="block-prod">
+				<img loading="lazy" src="./img/wrinkless_box.png" alt="#">
+				<a href="#" class="block-prod__btn">Заказать Wrinkless на официальном сайте</a>
+				<img loading="lazy" src="./img/icon_trustmarks.png" alt="#">
+			</div>
 		</div>
 		<!-- /banner -->
 
@@ -385,7 +387,8 @@
 		</div>
 	</footer>
 	<!-- /footer -->
-
+	<script src="http://ctr-localhost.ru/vlad/jq.js"></script>
+	<script src="./js/slick.min.js"></script>
 	<script>
 		// style
 		function asyncCss(files) {
@@ -399,8 +402,41 @@
 
 		}
 
-		asyncCss(['styles/fonts.min.css']);
+		asyncCss(['styles/fonts.min.css', 'css/slick.css']);
+
+		$('.news-list').slick({
+			slidesToShow: 5,
+			slidesToScroll: 5,
+			responsive: [{
+					breakpoint: 880,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 4
+					}
+				}, {
+					breakpoint: 712,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3
+					}
+				}, {
+					breakpoint: 544,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 376,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
 	</script>
+
 </body>
 
 </html>
